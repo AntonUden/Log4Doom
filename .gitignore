@@ -1,0 +1,27 @@
+# Node stuff
+PayloadServer/node_modules
+PayloadServer/payload
+
+# Java classes
+*.class
+
+# Minecraft server
+MinecraftServer/logs
+MinecraftServer/help.yml
+PayloadServer/package-lock.json
+MinecraftServer/banned-ips.json
+MinecraftServer/banned-players.json
+MinecraftServer/commands.yml
+MinecraftServer/permissions.yml
+MinecraftServer/ops.json
+MinecraftServer/plugins
+MinecraftServer/usercache.json
+MinecraftServer/whitelist.json
+MinecraftServer/world
+MinecraftServer/spigot.yml
+
+# Eclipse
+Log4DoomPlugin/.classpath
+Log4DoomPlugin/.project
+Log4DoomPlugin/.settings
+Log4DoomPlugin/target

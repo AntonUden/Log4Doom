@@ -1,0 +1,5 @@
+name: Log4Doom
+main: net.zeeraa.log4doom.Log4Doom
+description: Turning players games into doom using questionable methods
+version: 1.0
+authors: [Zeeraa]

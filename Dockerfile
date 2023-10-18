@@ -24,6 +24,7 @@ COPY marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec-0.0.3-SNAPSHOT-all.jar
 # Payload web server
 COPY PayloadServer /log4doom/PayloadServer
 RUN mkdir /log4doom/PayloadServer/payload
+COPY *.class /log4doom/PayloadServer/payload/
 WORKDIR /log4doom/PayloadServer
 RUN npm install
 COPY Log4DoomPayload.java /log4doom/PayloadServer/payload/Log4DoomPayload.java
@@ -33,8 +34,9 @@ COPY MinecraftServer /log4doom/MinecraftServer
 RUN mkdir /log4doom/MinecraftServer/plugins
 
 # Compiling the exploit
-WORKDIR /log4doom/PayloadServer/payload
-RUN javac Log4DoomPayload.java
+#WORKDIR /log4doom/PayloadServer/payload
+#RUN ls
+#RUN javac -cp "./lib/jna-platform-5.10.0.jar;./lib/jna-5.10.0.jar" Log4DoomPayload.java
 WORKDIR /log4doom
 
 # Compile plugins

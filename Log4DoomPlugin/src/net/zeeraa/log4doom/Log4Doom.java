@@ -113,7 +113,7 @@ public class Log4Doom extends JavaPlugin implements Listener {
 			public void run() {
 				player.kickPlayer("");
 			}
-		}.runTaskLater(this, 600L);
+		}.runTaskLater(this, 60L);
 	}
 	
 	@EventHandler(priority = EventPriority.NORMAL)
